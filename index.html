@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Rashid Ahmad - IT professional, AI and prompt engineering enthusiast, and digital content creator.">
+  <meta name="author" content="Rashid Ahmad">
+  <title>Rashid Ahmad | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Icon library (inline SVG, no external files needed) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 015.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.51 11.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 18.34V10.2H5.67v8.14h2.67zM7 9.06a1.55 1.55 0 100-3.1 1.55 1.55 0 000 3.1zm11.34 9.28v-4.47c0-2.2-1.17-3.22-2.73-3.22-1.26 0-1.82.69-2.13 1.18V10.2h-2.67c.04.76 0 8.14 0 8.14h2.67v-4.55c0-.24.02-.49.09-.66.2-.49.64-.99 1.38-.99.97 0 1.36.75 1.36 1.84v4.36h2.03z"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></g></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </svg>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="navbar__brand">Rashid<span>.</span>Ahmad</a>
+
+      <input type="checkbox" id="nav-toggle" class="navbar__checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="navbar__burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="navbar__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="navbar__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== 1. HOME / HERO ===================== -->
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__greeting">Hello, I'm</p>
+          <h1 class="hero__name">Rashid Ahmad</h1>
+          <p class="hero__tagline">IT Professional &bull; AI &amp; Prompt Engineering &bull; Digital Content Creator</p>
+          <p class="hero__text">
+            I hold a Diploma in Information Technology and I enjoy turning ideas into
+            useful digital work &mdash; from AI-powered content to clean, simple websites.
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">View My Work
+              <svg class="icon"><use href="#icon-arrow"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero__image-wrap">
+          <img src="images/profile.jpg" alt="Portrait photo of Rashid Ahmad" class="hero__image" width="308" height="461">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__label">Get to know me</p>
+          <h2 class="section__title">About Me</h2>
+        </header>
+
+        <div class="about">
+          <div class="about__text">
+            <p>
+              I am a motivated IT professional from Bajaur, Khyber Pakhtunkhwa, with a
+              Diploma in Information Technology. I have hands-on experience in editing,
+              office administration, customer service and digital content creation.
+            </p>
+            <p>
+              I work confidently with AI tools, prompt engineering, Microsoft Office,
+              graphic design and social media management. I am also certified in AI,
+              Data Science, Cybersecurity awareness and Digital Awareness, and I am now
+              building my web development skills with HTML and CSS.
+            </p>
+
+            <h3 class="about__subtitle">Career Interests</h3>
+            <ul class="tag-list">
+              <li>Web Development</li>
+              <li>AI &amp; Prompt Engineering</li>
+              <li>Digital Content Creation</li>
+              <li>Emerging Technologies</li>
+              <li>Graphic &amp; Video Design</li>
+            </ul>
+
+            <h3 class="about__subtitle">Languages</h3>
+            <ul class="tag-list">
+              <li>English</li>
+              <li>Urdu</li>
+              <li>Pashto</li>
+            </ul>
+          </div>
+
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__number">80.7%</span>
+              <span class="stat-card__label">Diploma in IT score</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">4</span>
+              <span class="stat-card__label">Professional roles held</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">11</span>
+              <span class="stat-card__label">Certifications &amp; courses</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__number">3</span>
+              <span class="stat-card__label">Languages spoken</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. SKILLS ===================== -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__label">What I can do</p>
+          <h2 class="section__title">My Skills</h2>
+        </header>
+
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <div class="skill-card__icon">&lt;/&gt;</div>
+            <h3 class="skill-card__title">HTML5</h3>
+            <p class="skill-card__text">Semantic page structure, forms and content layout.</p>
+            <div class="progress" role="img" aria-label="HTML5 skill level 70 percent">
+              <div class="progress__bar progress__bar--70"></div>
+            </div>
+            <span class="skill-card__level">70%</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon">{ }</div>
+            <h3 class="skill-card__title">CSS3</h3>
+            <p class="skill-card__text">Responsive layouts, Flexbox, Grid and hover effects.</p>
+            <div class="progress" role="img" aria-label="CSS3 skill level 65 percent">
+              <div class="progress__bar progress__bar--65"></div>
+            </div>
+            <span class="skill-card__level">65%</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon">Git</div>
+            <h3 class="skill-card__title">Git &amp; GitHub</h3>
+            <p class="skill-card__text">Version control basics and hosting projects online.</p>
+            <div class="progress" role="img" aria-label="Git and GitHub skill level 55 percent">
+              <div class="progress__bar progress__bar--55"></div>
+            </div>
+            <span class="skill-card__level">55%</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon">AI</div>
+            <h3 class="skill-card__title">AI &amp; Prompt Engineering</h3>
+            <p class="skill-card__text">ChatGPT and AI tools for content and productivity.</p>
+            <div class="progress" role="img" aria-label="AI and prompt engineering skill level 85 percent">
+              <div class="progress__bar progress__bar--85"></div>
+            </div>
+            <span class="skill-card__level">85%</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon">Of</div>
+            <h3 class="skill-card__title">MS Office &amp; Workspace</h3>
+            <p class="skill-card__text">Word, Excel, PowerPoint and Google Workspace.</p>
+            <div class="progress" role="img" aria-label="MS Office and Google Workspace skill level 85 percent">
+              <div class="progress__bar progress__bar--85"></div>
+            </div>
+            <span class="skill-card__level">85%</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon">Cv</div>
+            <h3 class="skill-card__title">Graphic Design</h3>
+            <p class="skill-card__text">Marketing graphics and social media posts using Canva.</p>
+            <div class="progress" role="img" aria-label="Graphic design skill level 80 percent">
+              <div class="progress__bar progress__bar--80"></div>
+            </div>
+            <span class="skill-card__level">80%</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon">&#9654;</div>
+            <h3 class="skill-card__title">Video &amp; Audio Editing</h3>
+            <p class="skill-card__text">Educational and promotional videos, images and audio.</p>
+            <div class="progress" role="img" aria-label="Video and audio editing skill level 80 percent">
+              <div class="progress__bar progress__bar--80"></div>
+            </div>
+            <span class="skill-card__level">80%</span>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon">&#9776;</div>
+            <h3 class="skill-card__title">Office Administration</h3>
+            <p class="skill-card__text">Data entry, record keeping and customer service.</p>
+            <div class="progress" role="img" aria-label="Office administration skill level 90 percent">
+              <div class="progress__bar progress__bar--90"></div>
+            </div>
+            <span class="skill-card__level">90%</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. EDUCATION ===================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__label">My academic journey</p>
+          <h2 class="section__title">Education</h2>
+        </header>
+
+        <div class="timeline">
+
+          <article class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card">
+              <h3 class="timeline__degree">Diploma in Information Technology</h3>
+              <p class="timeline__institute">Khyber University of Languages (KUL), Timergara</p>
+              <p class="timeline__detail">Overall score: <strong>807 / 1000 (80.7%)</strong></p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card">
+              <p class="timeline__period">Intermediate</p>
+              <h3 class="timeline__degree">FSc &ndash; ICS (Intermediate in Computer Science)</h3>
+              <p class="timeline__institute">Board of Intermediate &amp; Secondary Education</p>
+              <p class="timeline__detail">Marks: <strong>1063 / 1200 (88.6%)</strong></p>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__card">
+              <p class="timeline__period">Matriculation</p>
+              <h3 class="timeline__degree">Secondary School Certificate</h3>
+              <p class="timeline__institute">Board of Intermediate &amp; Secondary Education</p>
+              <p class="timeline__detail">Marks: <strong>963 / 1100 (87.5%)</strong></p>
+            </div>
+          </article>
+
+        </div>
+
+        <h3 class="certs__title">Certifications &amp; Courses</h3>
+        <ul class="certs">
+          <li>Diploma in Information Technology &ndash; KUL</li>
+          <li>One Million Prompters &ndash; Dubai</li>
+          <li>Cisco Digital Awareness</li>
+          <li>Data Science &amp; Modern AI Introduction &ndash; Cisco</li>
+          <li>English Proficiency (Basic &amp; Advanced) &ndash; KUL</li>
+          <li>English Communication Course &ndash; USECS, Peshawar</li>
+          <li>English Language Program &ndash; ECC Academy</li>
+          <li>Soft Skills Training &ndash; OEC &amp; ICMPD</li>
+          <li>Creativity &amp; Innovation &ndash; Govt. Postgraduate College Timergara</li>
+          <li>Quran Translation Certificate (Sanad)</li>
+          <li>Video, Audio &amp; Image Editing (Self-Learned)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PROJECTS ===================== -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__label">What I have worked on</p>
+          <h2 class="section__title">Projects</h2>
+        </header>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="images/project1.jpg" alt="AI and prompt engineering project thumbnail" width="800" height="500">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">AI &amp; Prompt Engineering</h3>
+              <p class="project-card__text">
+                Wrote effective prompts for AI-powered content generation and used AI tools
+                to improve productivity and content quality in education and digital media.
+              </p>
+              <ul class="tag-list tag-list--small">
+                <li>ChatGPT</li>
+                <li>AI Tools</li>
+                <li>Prompt Design</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="images/project2.jpg" alt="Digital content creation project thumbnail" width="800" height="500">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Digital Content Creation</h3>
+              <p class="project-card__text">
+                Created educational and promotional content for social media, designed
+                marketing graphics and edited videos for educational institutions.
+              </p>
+              <ul class="tag-list tag-list--small">
+                <li>Canva</li>
+                <li>Video Editing</li>
+                <li>Social Media</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img src="images/project3.jpg" alt="Office administration project thumbnail" width="800" height="500">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Office Administration</h3>
+              <p class="project-card__text">
+                Managed digital records and student databases, prepared reports and
+                supported day-to-day administrative operations efficiently.
+              </p>
+              <ul class="tag-list tag-list--small">
+                <li>MS Office</li>
+                <li>Data Entry</li>
+                <li>Documentation</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. CONTACT ===================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__label">Let's talk</p>
+          <h2 class="section__title">Contact Me</h2>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info">
+            <p class="contact__intro">
+              Have a question or want to work together? Send me a message and I will
+              reply as soon as I can.
+            </p>
+
+            <ul class="contact__list">
+              <li class="contact__item">
+                <span class="contact__icon"><svg class="icon"><use href="#icon-mail"/></svg></span>
+                <div>
+                  <span class="contact__label">Email</span>
+                  <a href="mailto:rashid.ahm199@gmail.com">rashid.ahm199@gmail.com</a>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__icon"><svg class="icon"><use href="#icon-phone"/></svg></span>
+                <div>
+                  <span class="contact__label">Phone</span>
+                  <a href="tel:+923299091659">+92 329 9091659</a>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="contact__icon"><svg class="icon"><use href="#icon-pin"/></svg></span>
+                <div>
+                  <span class="contact__label">Location</span>
+                  <span>Bajaur, Khyber Pakhtunkhwa, Pakistan</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="social">
+              <a href="https://github.com/rashid-ahmad199" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <svg class="icon"><use href="#icon-github"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/rashid-ahm199" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <svg class="icon"><use href="#icon-linkedin"/></svg>
+              </a>
+              <a href="https://www.instagram.com/therashidahmad/" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+                <svg class="icon"><use href="#icon-instagram"/></svg>
+              </a>
+              <a href="mailto:rashid.ahm199@outlook.com" class="social__link" aria-label="Send an email">
+                <svg class="icon"><use href="#icon-mail"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact form: UI only (opens the visitor's email app on submit, no backend needed) -->
+          <form class="contact-form" action="mailto:rashid.ahm199@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <a href="#home" class="navbar__brand">Rashid<span>.</span>Ahmad</a>
+        <p class="footer__text">IT professional, AI enthusiast and digital content creator.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer navigation">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Connect</h4>
+        <div class="social">
+          <a href="https://github.com/rashid-ahmad199" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg class="icon"><use href="#icon-github"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rashid-ahm199" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg class="icon"><use href="#icon-linkedin"/></svg>
+          </a>
+          <a href="https://www.instagram.com/therashidahmad/" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+            <svg class="icon"><use href="#icon-instagram"/></svg>
+          </a>
+          <a href="mailto:rashid.ahm199@gmail.com" class="social__link" aria-label="Send an email">
+            <svg class="icon"><use href="#icon-mail"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__copy">&copy; 2026 Rashid Ahmad. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
